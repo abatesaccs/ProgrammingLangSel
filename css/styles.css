@@ -1,3 +1,9 @@
+body {
+  background: url("../img/bodybackground.png");
+	background-repeat: repeat;
+	font-family: Arial;
+}
+
 .row {
   margin: 2%;
 }

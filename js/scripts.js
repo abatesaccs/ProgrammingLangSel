@@ -18,24 +18,49 @@ $(document).ready(function(){
   }
   event.preventDefault();
   });
-  $("button.HorL").click(function(){
-    var value = $('#question5').val();
-    if (value === "high") {
-      $(".htmlpanel").toggle();
-      $(".pythonpanel").toggle();
-    }else {
-      $(".assemblypanel").toggle();
-    }
-  });
+  // $("button.HorL").click(function(){
+  //   var value = $('#question5').val();
+  //   if (value === "high") {
+  //     $(".htmlpanel").toggle();
+  //     $(".pythonpanel").toggle();
+  //   }else {
+  //     $(".assemblypanel").toggle();
+  //   }
+  // });
+  //
+  // $("button.LorD").click(function(){
+  //   var value = $('#question4').val();
+  //   if (value === "logic") {
+  //     $(".assemblypanel").show();
+  //     $(".pythonpanel").show();
+  //
+  //   }else {
+  //     $(".htmlpanel").show();
+  //   }
+  // });
 
-  $("button.LorD").click(function(){
-    var value = $('#question4').val();
-    if (value === "logic") {
-      $(".assemblypanel").show();
+  $("button.submit").click(function(){
+    var q4value = $('#question4').val();
+    var q5value = $('#question5').val();
+    if (q4value === "logic" && q5value === "high") {
       $(".pythonpanel").show();
-
-    }else {
+    } else if (q4value === "logic" && q5value === "low") {
+      $(".assemblypanel").show();
+    } else if (q4value === "design") {
       $(".htmlpanel").show();
+    } else {
+      $(".assemblypanel").hide();
+      $(".pythonpanel").hide();
+      $(".htmlpanel").hide();
     }
+
+    // if (value === "logic") {
+    //   $(".assemblypanel").show();
+    //   $(".pythonpanel").show();
+    //
+    // }else {
+    //   $(".htmlpanel").show();
+    // }
   });
+
 });
