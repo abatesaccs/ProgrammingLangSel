@@ -18,7 +18,7 @@
     <form id="nameform">
       <label for="namelabel">Your Name:</label>
       <input id="nameinput" type="text">
-      <button type="submit" class="btn">Submit</button>
+      <button type="submit" class="btn" id="namebutton">Submit</button>
     </form>
 
     <form id="questionform">
@@ -57,22 +57,6 @@
       <div class="row">
         <div class="col-sm-12">
           <form class="form-control">
-            <label for="q4label">Do you prefer logic or design?</label>
-            <select class="form-control" id="question4">
-              <option value="1" class="defOption">Select</option>
-              <option [ngValue]="true">Logic</option>
-              <option [ngValue]="false">Design</option>
-            </select>
-          </form>
-        </div>
-      </div>
-      <button type="submit" class="btn">Submit</button>
-    </form>
-
-    <form id="questionform">
-      <div class="row">
-        <div class="col-sm-12">
-          <form class="form-control">
             <label for="q3label">Edward or Jacob?</label>
             <select class="form-control" id="question3">
               <option value="1" class="defOption">Select</option>
@@ -89,20 +73,36 @@
       <div class="row">
         <div class="col-sm-12">
           <form class="form-control">
-            <label for="q5label">High or low level language?</label>
-            <select class="form-control" id="question5">
+            <label for="q4label">Do you prefer logic or design?</label>
+            <select class="form-control" id="question4">
               <option value="1" class="defOption">Select</option>
-              <option [ngValue]="true">High level</option>
-              <option [ngValue]="false">Low level</option>
+              <option Value="logic">Logic</option>
+              <option Value="design">Design</option>
             </select>
           </form>
         </div>
       </div>
-      <button type="submit" class="btn">Submit</button>
+      <button type="submit" class="btn LorD">Submit</button>
+    </form>
+
+    <form id="questionform">
+      <div class="row">
+        <div class="col-sm-12">
+          <form class="form-control">
+            <label for="q5label">High or low level language?</label>
+            <select class="form-control" id="question5">
+              <option value="1" class="defOption">Select</option>
+              <option Value="high">High level</option>
+              <option Value="low">Low level</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <button type="submit" class="btn HorL">Submit</button>
     </form>
 
     <div class="row">
-      <div class="col-md-4 col-sm-12 htmlpanel" style="display:none;">
+      <div class="col-md-4 col-sm-12 htmlpanel">
         <div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">HTML/CSS</h3>
@@ -112,7 +112,7 @@
 					</div>
 				</div>
       </div>
-      <div class="col-md-4 col-sm-12 pythonpanel"  style="display:none;">
+      <div class="col-md-4 col-sm-12 pythonpanel">
         <div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Python</h3>

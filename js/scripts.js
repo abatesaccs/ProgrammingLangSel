@@ -8,38 +8,34 @@ $(document).ready(function(){
   var lowVsHigh = $('#question5').val();
   var logicVsDesign = $('#question4').val();
 
-  if (lowVsHigh === true) {
+  if (lowVsHigh === "high") {
     $(".pythonpanel").show();
     $(".htmlpanel").show();
   } else if (logicVsDesign === false) {
     $(".htmlpanel").show();
-  } else if (lowVsHigh === false) {
+  } else if (lowVsHigh === "low") {
 
   }
-
-  // $(function() {
-  //      $('#question4').change(function(){
-  //          $('.htmlpanel .pythonpanel .assemblypanel').hide();
-  //          $('#' + $(this).val()).show();
-  //      });
-  //  });
-
-
-
-  // switch(true) {
-  // case (logicVsDesign === false):
-  //   $(".htmlpanel").show()
-  //   break;
-  // case (lowVsHigh === true):
-  //   $(".pythonpanel").show()
-  //   break;
-  // case (lowVsHigh === false):
-  //   $(".assemblypanel").show()
-  //   break;
-  // default:
-  //   // code block
-  // }
   event.preventDefault();
   });
-  $(".pythonpanel").show();
+  $("button.HorL").click(function(){
+    var value = $('#question5').val();
+    if (value === "high") {
+      $(".htmlpanel").toggle();
+      $(".pythonpanel").toggle();
+    }else {
+      $(".assemblypanel").toggle();
+    }
+  });
+
+  $("button.LorD").click(function(){
+    var value = $('#question4').val();
+    if (value === "logic") {
+      $(".assemblypanel").show();
+      $(".pythonpanel").show();
+
+    }else {
+      $(".htmlpanel").show();
+    }
+  });
 });

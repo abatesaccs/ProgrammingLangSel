@@ -2,12 +2,24 @@
   margin: 2%;
 }
 
+#nameform {
+  margin-left: 3%;
+}
+
+#namebutton {
+  margin-left: 2%;
+}
+
+button{
+  margin-left: 3%;
+}
+
 .form-control {
   margin: 5px;
 }
 
-/* .htmlpanel {
-
+.htmlpanel {
+  display: none;
 }
 
 .pythonpanel {
@@ -16,4 +28,4 @@
 
 .assemblypanel {
   display: none;
-} */
+}
