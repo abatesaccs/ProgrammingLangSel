@@ -1,0 +1,19 @@
+.row {
+  margin: 2%;
+}
+
+.form-control {
+  margin: 5px;
+}
+
+.htmlpanel {
+  display: none;
+}
+
+.pythonpanel {
+  display: none;
+}
+
+.assemblypanel {
+  display: none;
+}

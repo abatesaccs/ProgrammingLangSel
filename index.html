@@ -1,15 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <title>Programming Language Selector</title>
   </head>
   <body>
-    <h1>Programming Language Selector</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Programming Language Selector</h1>
+      </div>
+    </div>
+
+<!-- this will be ignored, I have no use for it but it feels right-->
+    <form id="nameform">
+      <label for="namelabel">Your Name:</label>
+      <input id="nameinput" type="text">
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-control">
+          <label for="q1label">Cats or Dogs?</label>
+          <select class="form-control" id="question1">
+            <option value="1" class="defOption">Select</option>
+            <option>Cats</option>
+            <option>Dogs</option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-control">
+          <label for="q2label">Early bird or Night owl?</label>
+          <select class="form-control" id="question2">
+            <option value="1" class="defOption">Select</option>
+            <option>Early bird</option>
+            <option>Night owl</option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-control">
+          <label for="q3label">Cats or Dogs?</label>
+          <select class="form-control" id="question3">
+            <option value="1" class="defOption">Select</option>
+            <option [ngValue]="true">Cats</option>
+            <option [ngValue]="true">Dogs</option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-control">
+          <label for="q4label">Cats or Dogs?</label>
+          <select class="form-control" id="question4">
+            <option value="1" class="defOption">Select</option>
+            <option [ngValue]="true">Cats</option>
+            <option [ngValue]="true">Dogs</option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="form-control">
+          <label for="q5label">Cats or Dogs?</label>
+          <select class="form-control" id="question5">
+            <option value="1" class="defOption">Select</option>
+            <option [ngValue]="true">Cats</option>
+            <option [ngValue]="true">Dogs</option>
+          </select>
+        </form>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-md-4 col-sm-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default htmlpanel">
 					<div class="panel-heading">
 						<h3 class="panel-title">HTML/CSS</h3>
 					</div>
@@ -19,7 +98,7 @@
 				</div>
       </div>
       <div class="col-md-4 col-sm-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default pythonpanel">
 					<div class="panel-heading">
 						<h3 class="panel-title">Python</h3>
 					</div>
@@ -29,7 +108,7 @@
 				</div>
       </div>
       <div class="col-md-4 col-sm-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default assemblypanel">
 					<div class="panel-heading">
 						<h3 class="panel-title">Assembly</h3>
 					</div>
