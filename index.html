@@ -21,99 +21,114 @@
       <button type="submit" class="btn">Submit</button>
     </form>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <form class="form-control">
-          <label for="q1label">Cats or Dogs?</label>
-          <select class="form-control" id="question1">
-            <option value="1" class="defOption">Select</option>
-            <option>Cats</option>
-            <option>Dogs</option>
-          </select>
-        </form>
+    <form id="questionform">
+      <div class="row">
+        <div class="col-sm-12">
+          <form class="form-control">
+            <label for="q1label">Cats or Dogs?</label>
+            <select class="form-control" id="question1">
+              <option value="1" class="defOption">Select</option>
+              <option>Cats</option>
+              <option>Dogs</option>
+            </select>
+          </form>
+        </div>
       </div>
-    </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <form id="questionform">
+      <div class="row">
+        <div class="col-sm-12">
+          <form class="form-control">
+            <label for="q2label">Early bird or Night owl?</label>
+            <select class="form-control" id="question2">
+              <option value="1" class="defOption">Select</option>
+              <option>Early bird</option>
+              <option>Night owl</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <form id="questionform">
+      <div class="row">
+        <div class="col-sm-12">
+          <form class="form-control">
+            <label for="q4label">Do you prefer logic or design?</label>
+            <select class="form-control" id="question4">
+              <option value="1" class="defOption">Select</option>
+              <option [ngValue]="true">Logic</option>
+              <option [ngValue]="false">Design</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <form id="questionform">
+      <div class="row">
+        <div class="col-sm-12">
+          <form class="form-control">
+            <label for="q3label">Edward or Jacob?</label>
+            <select class="form-control" id="question3">
+              <option value="1" class="defOption">Select</option>
+              <option [ngValue]="true">Edward</option>
+              <option [ngValue]="true">Jacob</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <form id="questionform">
+      <div class="row">
+        <div class="col-sm-12">
+          <form class="form-control">
+            <label for="q5label">High or low level language?</label>
+            <select class="form-control" id="question5">
+              <option value="1" class="defOption">Select</option>
+              <option [ngValue]="true">High level</option>
+              <option [ngValue]="false">Low level</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
 
     <div class="row">
-      <div class="col-sm-12">
-        <form class="form-control">
-          <label for="q2label">Early bird or Night owl?</label>
-          <select class="form-control" id="question2">
-            <option value="1" class="defOption">Select</option>
-            <option>Early bird</option>
-            <option>Night owl</option>
-          </select>
-        </form>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-12">
-        <form class="form-control">
-          <label for="q3label">Cats or Dogs?</label>
-          <select class="form-control" id="question3">
-            <option value="1" class="defOption">Select</option>
-            <option [ngValue]="true">Cats</option>
-            <option [ngValue]="true">Dogs</option>
-          </select>
-        </form>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-12">
-        <form class="form-control">
-          <label for="q4label">Cats or Dogs?</label>
-          <select class="form-control" id="question4">
-            <option value="1" class="defOption">Select</option>
-            <option [ngValue]="true">Cats</option>
-            <option [ngValue]="true">Dogs</option>
-          </select>
-        </form>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-12">
-        <form class="form-control">
-          <label for="q5label">Cats or Dogs?</label>
-          <select class="form-control" id="question5">
-            <option value="1" class="defOption">Select</option>
-            <option [ngValue]="true">Cats</option>
-            <option [ngValue]="true">Dogs</option>
-          </select>
-        </form>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <div class="panel panel-default htmlpanel">
+      <div class="col-md-4 col-sm-12 htmlpanel" style="display:none;">
+        <div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">HTML/CSS</h3>
 					</div>
 					<div class="panel-body">
-						<p></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 				</div>
       </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="panel panel-default pythonpanel">
+      <div class="col-md-4 col-sm-12 pythonpanel"  style="display:none;">
+        <div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Python</h3>
 					</div>
 					<div class="panel-body">
-						<p></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 				</div>
       </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="panel panel-default assemblypanel">
+      <div class="col-md-4 col-sm-12 assemblypanel">
+        <div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Assembly</h3>
 					</div>
 					<div class="panel-body">
-						<p></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 				</div>
       </div>
