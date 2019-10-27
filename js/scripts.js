@@ -8,37 +8,6 @@ $(document).ready(function(){
     var q3value = $('#question3').val();
     var q4value = $('#question4').val();
     var q5value = $('#question5').val();
-    if (q4value === "logic" && q5value === "high") {
-      $(".pythonpanel").show();
-      $(".htmlpanel").hide();
-      $(".assemblypanel").hide();
-      $(".processingpanel").hide();
-    } else if (q4value === "logic" && q5value === "low") {
-      $(".assemblypanel").show();
-      $(".htmlpanel").hide();
-      $(".pythonpanel").hide();
-      $(".processingpanel").hide();
-    } else if (q4value === "design" && q3value === "web") {
-      $(".htmlpanel").show();
-      $(".pythonpanel").hide();
-      $(".assemblypanel").hide();
-      $(".processingpanel").hide();
-    } else if (q4value === "design" && q3value === "software") {
-      $(".processingpanel").show();
-      $(".assemblypanel").hide();
-      $(".pythonpanel").hide();
-      $(".htmlpanel").hide();
-    } else {
-      $(".processingpanel").hide();
-      $(".assemblypanel").hide();
-      $(".pythonpanel").hide();
-      $(".htmlpanel").hide();
-    }
-  });
-  $("button.submit").click(function(){
-    var q3value = $('#question3').val();
-    var q4value = $('#question4').val();
-    var q5value = $('#question5').val();
     if (q3value === "web") {
 
       if (q4value === "design" && q5value === "high") {
@@ -54,7 +23,27 @@ $(document).ready(function(){
         $(".web").hide();
       }
 
-    } else if (true) {
+    } else if (q3value === "software") {
+
+      if (q4value === "logic" && q5value === "high") {
+        $(".pythonpanel").show();
+        $(".processingpanel").hide();
+        $(".assemblypanel").hide();
+        $(".web").hide();
+      } else if (q4value === "logic" && q5value === "low") {
+        $(".assemblypanel").show();
+        $(".pythonpanel").hide();
+        $(".processingpanel").hide();
+        $(".web").hide();
+      } else if (q4value === "design" && q5value === "high") {
+        $(".processingpanel").show();
+        $(".assemblypanel").hide();
+        $(".pythonpanel").hide();
+        $(".web").hide();
+      } else {
+        $(".software").hide();
+        $(".web").hide();
+      }
 
     }
 

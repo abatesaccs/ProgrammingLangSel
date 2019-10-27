@@ -43,3 +43,7 @@ button{
 .processingpanel {
   display: none;
 }
+
+.csspanel {
+  display: none;
+}
