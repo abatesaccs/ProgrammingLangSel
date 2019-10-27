@@ -16,6 +16,10 @@ body {
   margin-left: 2%;
 }
 
+.form-control {
+  background: url("../img/selbg.png");
+}
+
 button{
   margin-left: 3%;
 }
@@ -33,5 +37,9 @@ button{
 }
 
 .assemblypanel {
+  display: none;
+}
+
+.processingpanel {
   display: none;
 }
